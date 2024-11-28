@@ -1,17 +1,19 @@
 import chalk from "chalk";
 import convertFromCelsius from "./fromCelsius";
+import convertToCelsius from "./toCelsius";
 
 function temperatureConverter(num,from,to) {
     if(isNaN(num) === false && typeof(from) === 'string' && typeof(to)=== 'string') {
 
         if(from.length === 1 && to.length === 1) {
             if(from.toLowerCase() == 'c') {
-                convertFromCelsius(num,to)
+                return convertFromCelsius(num,to.toLowerCase())
             } else {
-                
+                const celsius = convertToCelsius(num, from.toLowerCase());
+                return convertFromCelsius(celsius, to.toLowerCase())
             }
         } else {
-            console.log(chalk.red('Erro: Nome abreviado de uma das temperaturas não bate'));
+            return console.log(chalk.red('Erro: Nome abreviado de uma das temperaturas não bate'));
         }
 
     } else {

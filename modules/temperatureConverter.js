@@ -1,11 +1,12 @@
 import chalk from "chalk";
+import convertFromCelsius from "./fromCelsius";
 
 function temperatureConverter(num,from,to) {
     if(isNaN(num) === false && typeof(from) === 'string' && typeof(to)=== 'string') {
 
         if(from.length === 1 && to.length === 1) {
             if(from.toLowerCase() == 'c') {
-                
+                convertFromCelsius(num,to)
             } else {
                 
             }

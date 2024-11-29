@@ -1,13 +1,13 @@
 import chalk from "chalk";
-import convertFromCelsius from "./fromCelsius";
-import convertToCelsius from "./toCelsius";
+import convertFromCelsius from "./fromCelsius.js";
+import convertToCelsius from "./toCelsius.js";
 
 function temperatureConverter(num,from,to) {
     if(isNaN(num) === false && typeof(from) === 'string' && typeof(to)=== 'string') {
 
         if(from.length === 1 && to.length === 1) {
             if(from.toLowerCase() == 'c') {
-                return convertFromCelsius(num,to.toLowerCase())
+                return convertFromCelsius(num, to.toLowerCase())
             } else {
                 const celsius = convertToCelsius(num, from.toLowerCase());
                 return convertFromCelsius(celsius, to.toLowerCase())
@@ -21,4 +21,4 @@ function temperatureConverter(num,from,to) {
     }
 }
 
-temperatureConverter(1, 2, 'f');
+temperatureConverter(1, 'c', 'f');

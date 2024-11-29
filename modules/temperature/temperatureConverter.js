@@ -2,7 +2,7 @@ import chalk from "chalk";
 import convertFromCelsius from "./fromCelsius.js";
 import convertToCelsius from "./toCelsius.js";
 
-function temperatureConverter(num,from,to) {
+export default function temperatureConverter(num,from,to) {
     if(isNaN(num) === false && typeof(from) === 'string' && typeof(to)=== 'string') {
 
         if(from.length === 1 && to.length === 1) {
@@ -20,5 +20,3 @@ function temperatureConverter(num,from,to) {
         return console.log(chalk.red('Um dos dados está errado.'));
     }
 }
-
-temperatureConverter(1, 'c', 'f');

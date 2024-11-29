@@ -1,0 +1,13 @@
+{
+  "name": "unitcon",
+  "version": "0.0.1",
+  "description": "**Uma biblioteca Node.js para facilitar a conversão de unidades de medida comuns.**",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

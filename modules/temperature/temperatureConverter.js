@@ -1,18 +1,21 @@
+import celsiusTo from "./celsiusTo.js";
+
 function temperatureConverter(num, from, to) {
     if(isNaN(num) === false && typeof(from) === "string" && typeof(to) === "string" && from.length === 1 && to.length === 1) {
         const originalTemperature = from.toLowerCase();
         const newTemperature = to.toLowerCase();
+        let convertedTemperature;
         
-        if(from === 'c') {
-            
+        if(originalTemperature === 'c') {
+          return  convertedTemperature = celsiusTo(num, newTemperature);
         }
 
     } else {
-        console.log('not');
+        return 'Erro: parâmetros invalidos.';
     }
 
     
 
 }
 
-temperatureConverter(1,'a', 'b');
+console.log(temperatureConverter(12, 'c' , 'f'));

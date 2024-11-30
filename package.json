@@ -1,6 +1,6 @@
 {
   "name": "unitcon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "**Uma biblioteca Node.js para facilitar a conversão de unidades de medida comuns.**",
   "main": "index.js",
   "type": "module",

@@ -3,7 +3,7 @@ export default function celsiusTo(num, to) {
    let converted;
    switch(newTemperature) {
       case 'k':
-         converted = num + 273,15;
+         converted = num + 273.15;
          break;
       case 'f':
          converted = (num * 9/5) + 32;

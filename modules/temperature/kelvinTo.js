@@ -6,7 +6,7 @@ export default function kelvinTo(num, to) {
           converted = (num  - 273.15) * 9/5 + 32;
           break;
        case 'c':
-          converted = 0 - 273,15;
+          converted = 0 - 273.15;
     }
  
     return converted;

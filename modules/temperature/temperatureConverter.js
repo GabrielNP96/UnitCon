@@ -2,7 +2,7 @@ import celsiusTo from "./celsiusTo.js";
 import fahrenheitTo from "./fahrenheitTo.js";
 import kelvinTo from "./kelvinTo.js";
 
-function temperatureConverter(num, from, to) {
+export default function temperatureConverter(num, from, to) {
     if(isNaN(num) === false && typeof(from) === "string" && typeof(to) === "string" && from.length === 1 && to.length === 1) {
         const originalTemperature = from.toLowerCase();
         const newTemperature = to.toLowerCase();
@@ -23,5 +23,3 @@ function temperatureConverter(num, from, to) {
     
 
 }
-
-console.log(temperatureConverter(12, 'k' , 'f'));
